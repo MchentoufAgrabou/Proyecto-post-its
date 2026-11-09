@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Pizarra de post-its</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="board"></div>
+<button id="fab" aria-label="Crear nota">+</button>
+
+<dialog id="dlg">
+  <form method="dialog">
+    <textarea id="txt" maxlength="140" placeholder="Escribe tu nota…" required></textarea>
+    <label>Color: <input type="color" id="col" value="#ffd86b"></label><br>
+    <button value="ok">Guardar</button>
+    <button value="no" formnovalidate>Cancelar</button>
+  </form>
+</dialog>
+
+<script type="module" src="indes.js"></script>
+</body>
+</html>
